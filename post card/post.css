@@ -188,13 +188,13 @@ article .div-reacoes .div-rolo-1 .btn-chat-popup {
     bottom: 70px;
     width: 310px;
     padding: 15px;
-    gap: 8px;
+    gap: 15px;
     position: absolute;
     background-color: white;
     bottom: 80px;
     padding: 10px;
     box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.115);
-    border-radius: 8px;
+    border-radius:22px;
 }
 
 
