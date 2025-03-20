@@ -39,7 +39,7 @@ function fnome() {
         }
     })
 
-    btnChat.addEventListener("mouseover", () => {
+    btnChat.addEventListener("click", () => {
         chatPopUp.removeAttribute("id")
         btn.style.opacity = "0.7"
         iChat.style.color = "blue"
@@ -48,7 +48,7 @@ function fnome() {
 
     })
 
-    btnChat.addEventListener("click", () => {
+    btnChat.addEventListener("dblclick", () => {
         chatPopUp.setAttribute("id", "hidden")
         iChat.style.color = "black"
         btn.style.opacity = "0.7"
