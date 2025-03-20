@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Boldonse&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sen:wght@400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Boldonse&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sen:wght@400..800&display=swap');
+
+* {
+    scroll-behavior: smooth;
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: 400;
+}
+
+body {
+
+    background-color: rgb(220, 199, 199);
+}
+
+main {
+  
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+article {
+
+    border-radius: 15px;
+    background-color: rgb(239, 239, 239);
+
+    width: 100%;
+    max-width: 420px;
+}
+
+article .div-criador-img {
+
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+article .div-criador-img .div-creador-img-child {
+    gap: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+article .div-criador-img .div-creador-img-child img {
+    background-color: rgb(221, 221, 221);
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+article .div-criador-img .div-creador-img-child .div-user-nome {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+article .div-criador-img .div-creador-img-child .div-user-nome h3 {
+    font-size: 19px;
+}
+
+article .div-criador-img .div-creador-img-child .div-user-nome i {
+    font-size: 18px;
+}
+
+article .div-criador-img #i-more {
+    padding: 10px;
+    border-radius: 8px;
+    background-color: rgba(219, 219, 219, 0.79);
+    font-size: 22px;
+}
+
+hr {
+
+    border-top: none;
+    opacity: 0.5;
+}
+
+article .div-descricao {
+
+    padding: 15px;
+
+
+}
+
+article .div-descricao p {
+    font-family: "Boldonse", system-ui;
+    font-size: 16px;
+}
+
+article  #img-hidden {
+    display: none;
+
+    
+}
+article .user-post {
+    background-color: rgba(141, 141, 141, 0.79);
+    width: 100%;
+   
+    display:block;
+    animation-name: carregar;
+    animation-duration: 3s;
+    animation-iteration-count: 6;
+
+    
+}
+@keyframes carregar {
+ 
+    50%{
+
+        background-color: rgba(218, 218, 218, 0.79);
+    }
+    
+}
+article .div-reacoes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+
+
+}
+
+article .div-reacoes button {
+    padding: 8px;
+
+
+}
+
+article .div-reacoes .div-rolo-1 {
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+article .div-reacoes .div-rolo-1 {
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+
+article .div-reacoes .div-rolo-1 button {
+    position: relative;
+    cursor: pointer;
+    border: none;
+    background-color: rgb(239, 239, 239);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 2px 8px;
+
+}
+
+
+article .div-reacoes .div-rolo-1 button i {
+    font-size: 24px;
+
+}
+
+article .div-reacoes .div-rolo-1 #hidden {
+    display: none;
+
+}
+
+article .div-reacoes .div-rolo-1 .btn-chat-popup {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    transition: 0.5s;
+
+    left: -85px;
+    bottom: 70px;
+    width: 310px;
+    padding: 15px;
+    gap: 8px;
+    position: absolute;
+    background-color: white;
+    bottom: 80px;
+    padding: 10px;
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.115);
+    border-radius: 8px;
+}
+
+
+
+
+article .div-reacoes .div-rolo-1 .btn-chat-popup .div-coments {
+    display: flex;
+    gap: 8px;
+
+
+}
+
+article .div-reacoes .div-rolo-1 .btn-chat-popup .div-coments img {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border: 2px solid rgb(203, 203, 203);
+    border-radius: 50%;
+
+
+
+}
+
+article .div-reacoes .div-rolo-1 .btn-chat-popup .div-coments p {
+    text-align: left;
+    padding: 10px;
+    border-radius: 4px;
+
+    background-color: rgb(237, 237, 237);
+
+
+
+}
+
+
+
+article .div-reacoes .div-rolo-2 button {
+  
+
+    position: relative;
+    cursor: pointer;
+    border: none;
+    background-color: rgb(239, 239, 239);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 2px 3px;
+
+}
+
+article .div-reacoes .div-rolo-2 button i {
+  
+
+    font-size: 24px;
+
+}
+article .div-reacoes .div-rolo-2 button #id-salvar {
+  
+
+    display: none;
+ 
+ }
+article .div-reacoes .div-rolo-2 button .span-salvo {
+  
+opacity: 0.7;
+
+}
+
+@media(max-width: 600px){
+
+    main {
+  
+        margin: 30px 0 0 0;
+      
+    }
+
+
+
+    article {
+
+        border-radius: 15px 15px  0 0 ;
+       
+    
+    }
+
+}
