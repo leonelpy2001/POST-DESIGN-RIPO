@@ -11,9 +11,17 @@
 </head>
 
 <body>
+    <div class="banner">
+        <p>
+            Adicionamos novos recursos à nossa aplicação para oferecer uma experiência ainda melhor! Agora, você pode
+            aproveitar funcionalidades aprimoradas que tornam a navegação mais intuitiva,
+        </p>
+        <i class='bx bx-x' id="i-banner-close"></i>
+    </div>
     <main>
-        
+
         <article>
+
             <div class="div-criador-img">
                 <div class="div-creador-img-child">
                     <img src="img/logo.png" alt="logo" class="criador-logo">
@@ -22,7 +30,14 @@
                         <i class='bx bx-check-circle'></i>
                     </div>
                 </div>
-                <i class='bx bx-dots-vertical-rounded bx-rotate-180' id="i-more"></i>
+                <div class="i-more-popup">
+                    <i class='bx bx-dots-vertical-rounded bx-rotate-180' id="i-more"></i>
+                    <div class="i-more-pop-ps" id="i-more-popup-ps-id">
+                        <p>Fazer denuncia</p>
+                        <p>Conpartilhar</p>
+                        <p>Peportar</p>
+                    </div>
+                </div>
             </div>
             <hr>
             <div class="div-descricao">
@@ -31,6 +46,83 @@
                 </p>
             </div>
             <img src="img/salapost.png" alt="user-post" class="user-post" id="img-hidden">
+            <div class="div-reacoes">
+                <div class="div-rolo-1">
+                    <button>
+                        <i class='bx bx-like' id="i-like"></i>
+                        <span class="span-like">
+                            12 Gostos
+                        </span>
+                    </button>
+                    <button class="btn-chat">
+                        <i class='bx bx-message-square-dots' id="i-chat"></i>
+                        <span class="span-chat">
+                            3 Comentarios
+                        </span>
+                        <div class="btn-chat-popup" id="hidden">
+                            <div class="div-coments">
+                                <img src="img/user-1.jpeg" alt="user coment">
+                                <p class="box-coment">
+                                    E e qu eu mas quero fazer neste exato momento 😊
+                                </p>
+                            </div>
+                            <div class="div-coments">
+                                <img src="img/user-3.jpeg" alt="user coment">
+                                <p class="box-coment">
+                                    Sempre que possivel ja estou na cama, nao tem como resistir, O MEU PASSA TEMPO
+                                    FAVORITOOOOO 🤎🤎🤎🤎🤎
+                                </p>
+                            </div>
+
+                            <div class="div-coments">
+                                <img src="img/user-1.jpeg" alt="user coment">
+                                <p class="box-coment">
+                                    E e qu eu mas quero fazer neste exato momento 😊
+                                </p>
+                            </div>
+
+
+                        </div>
+                    </button>
+
+                </div>
+                <div class="div-rolo-2">
+                    <button class="btn-salvar"><i class='bx bx-bookmarks bx-rotate-180'></i>
+                        <span class="span-salvo" id="id-salvar"> Salvo</span>
+                    </button>
+                </div>
+            </div>
+        </article>
+
+
+        <article>
+            <div class="div-criador-img">
+                <div class="div-creador-img-child">
+                    <img src="img/logo2.png" alt="logo" class="criador-logo">
+                    <div class="div-user-nome">
+                        <h3 class="user-nome">O pençador</h3>
+                        <i class='bx bx-check-circle'></i>
+
+                    </div>
+                </div>
+
+
+                <div class="i-more-popup">
+                    <i class='bx bx-dots-vertical-rounded bx-rotate-180' id="i-more"></i>
+                    <div class="i-more-pop-ps" id="i-more-popup-ps-id">
+                        <p>Fazer denuncia</p>
+                        <p>Conpartilhar</p>
+                        <p>Peportar</p>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="div-descricao">
+                <p>
+                    " Se deres o teu melhor neste momento, no momento seguinte estarás na posição mais vantajosa ".
+                </p>
+            </div>
+            <img src="img/post3.png" alt="user-post" class="user-post" id="img-hidden">
             <div class="div-reacoes">
                 <div class="div-rolo-1">
                     <button>
@@ -79,73 +171,6 @@
             </div>
         </article>
 
-
-        <article>
-            <div class="div-criador-img">
-                <div class="div-creador-img-child">
-                    <img src="img/logo2.png" alt="logo" class="criador-logo">
-                    <div class="div-user-nome">
-                        <h3 class="user-nome">O pençador</h3>
-                        <i class='bx bx-check-circle'></i>
-                    </div>
-                </div>
-                <i class='bx bx-dots-vertical-rounded bx-rotate-180' id="i-more"></i>
-            </div>
-            <hr>
-            <div class="div-descricao">
-                <p>
-                    " Se deres o teu melhor neste momento, no momento seguinte estarás na posição mais vantajosa ".
-                </p>
-            </div>
-            <img src="img/post3.png" alt="user-post" class="user-post" id="img-hidde">
-            <div class="div-reacoes">
-                <div class="div-rolo-1">
-                    <button>
-                        <i class='bx bx-like' id="i-like"></i>
-                        <span class="span-like">
-                            12 Gostos
-                        </span>
-                    </button>
-                    <button class="btn-chat">
-                        <i class='bx bx-message-square-dots' id="i-chat"></i>
-                        <span class="span-chat">
-                            2 Comentarios
-                        </span>
-                        <div class="btn-chat-popup" id="hidden">
-                            <div class="div-coments">
-                                <img src="img/user-1.jpeg" alt="user coment">
-                                <p class="box-coment">
-                                    E e qu eu mas quero fazer neste exato momento 😊
-                                </p>
-                            </div>
-                            <div class="div-coments">
-                                <img src="img/user-3.jpeg" alt="user coment">
-                                <p class="box-coment">
-                                    Sempre que possivel ja estou na cama, nao tem como resistir, O MEU PASSA TEMPO
-                                    FAVORITOOOOO 🤎🤎🤎🤎🤎
-                                </p>
-                            </div>
-
-                            <div class="div-coments">
-                                <img src="img/user-1.jpeg" alt="user coment">
-                                <p class="box-coment">
-                                    E e qu eu mas quero fazer neste exato momento 😊
-                                </p>
-                            </div>
-
-
-                        </div>
-                    </button>
-
-                </div>
-                <div class="div-rolo-2">
-                    <button class="btn-salvar"><i class='bx bx-bookmarks bx-rotate-180'></i>
-                        <span class="span-salvo"> Salvo</span>
-                    </button>
-                </div>
-            </div>
-        </article>
-        
         <article>
             <div class="div-criador-img">
                 <div class="div-creador-img-child">
@@ -155,7 +180,14 @@
                         <i class='bx bx-check-circle'></i>
                     </div>
                 </div>
-                <i class='bx bx-dots-vertical-rounded bx-rotate-180' id="i-more"></i>
+                <div class="i-more-popup">
+                    <i class='bx bx-dots-vertical-rounded bx-rotate-180' id="i-more"></i>
+                    <div class="i-more-pop-ps" id="i-more-popup-ps-id">
+                        <p>Fazer denuncia</p>
+                        <p>Conpartilhar</p>
+                        <p>Peportar</p>
+                    </div>
+                </div>
             </div>
             <hr>
             <div class="div-descricao">
@@ -205,7 +237,7 @@
                 </div>
                 <div class="div-rolo-2">
                     <button class="btn-salvar"><i class='bx bx-bookmarks bx-rotate-180'></i>
-                        <span class="span-salvo"> Salvo</span>
+                        <span class="span-salvo" id="id-salvar"> Salvo</span>
                     </button>
                 </div>
             </div>

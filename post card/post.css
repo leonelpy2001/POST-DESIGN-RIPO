@@ -15,9 +15,37 @@ body {
     background-color: rgb(220, 199, 199);
 }
 
+body .banner {
+    padding: 15px 150px;
+    color: white;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+}
+
+body .banner p {
+
+    padding: 20px 0;
+    color: white;
+    font-size: 14px;
+    font-family: "Boldonse", system-ui;
+
+}
+
+body .banner i {
+    cursor: pointer;
+    padding: 10px;
+    font-size: 22px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.358);
+}
+
 main {
 
-    margin: 30px auto;
+    margin: auto;
+    padding: 30px 15px;
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -27,7 +55,7 @@ main {
 }
 
 article {
-
+    border: 1px solid rgba(55, 55, 55, 0.576);
     border-radius: 15px;
     background-color: rgb(239, 239, 239);
 
@@ -72,12 +100,62 @@ article .div-criador-img .div-creador-img-child .div-user-nome i {
     font-size: 18px;
 }
 
+
+article .div-criador-img .i-more-popup {
+
+    position: relative;
+}
+
+article .div-criador-img .i-more-popup #i-more-popup-ps-id {
+    display: none;
+}
+
+article .div-criador-img .i-more-popup .i-more-pop-ps {
+    padding: 10px;
+    margin-top: 10px;
+    z-index: 2;
+    box-shadow: 0 0 50px 10px rgba(0, 0, 0, 0.1);
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    border-radius: 16px;
+    gap: 8px;
+    width: 200px;
+}
+
+article .div-criador-img .i-more-popup .i-more-pop-ps P {
+    background-color: rgb(239, 237, 226);
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+article .div-criador-img .i-more-popup .i-more-pop-ps P:hover {
+    background-color: rgba(211, 209, 198, 0.595);
+}
+
 article .div-criador-img #i-more {
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: transparent;
+    font-size: 22px;
+}
+
+article .div-criador-img #i-more:hover {
     padding: 10px;
     border-radius: 8px;
     background-color: rgba(219, 219, 219, 0.79);
     font-size: 22px;
 }
+
+
+
+
+
+
 
 hr {
 
@@ -184,17 +262,17 @@ article .div-reacoes .div-rolo-1 .btn-chat-popup {
     position: absolute;
     transition: 0.5s;
 
-    left: -85px;
+    right: -60px;
     bottom: 70px;
     width: 310px;
-    padding: 15px;
+
     gap: 15px;
     position: absolute;
     background-color: white;
     bottom: 80px;
     padding: 10px;
     box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.115);
-    border-radius:22px;
+    border-radius: 22px;
 }
 
 
@@ -265,28 +343,46 @@ article .div-reacoes .div-rolo-2 button .span-salvo {
 
 }
 
-@media(max-width: 600px) {
+@media(max-width: 900px) {
+
+
+    body .banner {
+        position: relative;
+        padding: 18px;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    body .banner p {
+        padding-top: 55px;
+   
+        color: white;
+        font-size: 11px;
+        font-family: "Boldonse", system-ui;
+
+    }
+
+    body .banner i {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+    }
 
     main {
 
-        margin: 30px 0 0 0;
+        padding-bottom: 15px;
 
     }
 
 
-
-    article {
-
-        border-radius: 15px 15px 0 0;
-
-
-    }
 
 
     article .div-reacoes .div-rolo-1 .btn-chat-popup {
 
-        left: -110px;
-        bottom: 50px;
+        bottom: 60px;
 
     }
 }
